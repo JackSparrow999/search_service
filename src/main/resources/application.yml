@@ -1,0 +1,42 @@
+server:
+  port: 8002
+
+cloud:
+  aws:
+    region:
+      static: us-east-2
+      auto: false
+    credentials:
+      access-key:
+      secret-key:
+    end-point:
+      search:
+        uri:
+        name: SearchQueue.fifo
+      feedback:
+        uri:
+        name: FeedbackQueue.fifo
+      mail:
+        uri:
+        name: MailQueue.fifo
+
+#Google Search
+google:
+  base_url: https://customsearch.googleapis.com
+  search_engine_id:
+  api_key:
+
+app:
+  #must be less than equal to 10 and more than 0
+  linksUpperLimit: 5
+  #In seconds
+  emailDelay: 30
+
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+logging:
+  level:
+    org:
+      springframework: INFO
