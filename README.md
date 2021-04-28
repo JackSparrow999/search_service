@@ -1,6 +1,12 @@
 # ykn
 
-This application allows a subscribed/unsubscribed user to get emails of good articles at regular intervals. We have 3 microservices and 3 AWS sqs to execute this:
+This microservice ecosystem allows a subscribed/unsubscribed user to get emails of good articles at regular intervals. We have 3 microservices and 3 AWS SQS queues to execute this.
+
+Tech Stack
+Language - Java
+Frameworks - Spring Boot, Spring Webflux
+Databases: Postgres
+External Services: AWS SQS, AWS SES, Google Search APIs
 
 Architecture: https://github.com/JackSparrow999/search_service/blob/master/Architecture.JPG
 
