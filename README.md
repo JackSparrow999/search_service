@@ -1,6 +1,8 @@
 # ykn
 
-This application allowsa subscribed/unsubscribed user to get emails of good articles at regular intervals. We have 3 microservices and 3 AWS sqs to execute this:
+This application allows a subscribed/unsubscribed user to get emails of good articles at regular intervals. We have 3 microservices and 3 AWS sqs to execute this:
+
+Architecture: https://github.com/JackSparrow999/search_service/blob/master/Architecture.JPG
 
 User Service (https://github.com/JackSparrow999/user_service):
 
