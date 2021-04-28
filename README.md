@@ -24,6 +24,6 @@ Mail Service (https://github.com/JackSparrow999/mail_service):
 - Creation of feedback event (Feedback SQS)
 -> Written in **Spring Boot**
 
-Note: Unlike a DAG which runs at fixed intervals this archtecture allows us to trigger a mail at any interval that the user selects. Although CPU cycles are wasted here if the mail's time to send has not been crossed but during heavy loads the system corrects itself beacause of the longer wait time for each queue event.
+Note: Although CPU cycles are wasted here if the mail's time to send has not been crossed but during heavy loads this problem goes away beacause of the longer wait time for each queue event.
 
 Note: Code will be refactored soon to implement proper design patterns. Also will make it more readable when I get some time! :)
